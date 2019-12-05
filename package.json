@@ -1,0 +1,33 @@
+{
+  "name": "hr_generalist",
+  "version": "1.0.0",
+  "description": "web application for hr generalist",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha ./tests/**.spec.js --exit",
+    "create-user": "node scripts/createUserEmployee.js ",
+    "start": "node api/server",
+    "server": "nodemon api/server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "mostafa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.2.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.2",
+    "mongoose": "^5.7.7",
+    "morgan": "^1.9.1",
+    "questions": "0.0.6",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "nodemon": "^1.19.4"
+  }
+}
